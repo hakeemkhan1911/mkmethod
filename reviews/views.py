@@ -34,5 +34,5 @@ def place_review(request):
     return render(request, 'reviews.html', {'all_reviews': all_reviews})
 
 def google_v(request):
-    return render(request, 'google_verification.html')
+    return render(request, 'googleb3e41e1c86269d05.html')
 
