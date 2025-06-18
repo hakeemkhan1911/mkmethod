@@ -1,3 +1,8 @@
+from django.shortcuts import render
+from django.core.mail import send_mail
+from .models import Reviews
+from decouple import config
+
 def place_review(request):
     if request.method == 'POST':
         name = request.POST.get('name')
