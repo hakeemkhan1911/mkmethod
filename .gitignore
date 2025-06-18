@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+env/
+
+# Environment variables
+.env
+db.sqlite3
+# Media uploads (optional to ignore)
+media/
+
+# Log files
+*.log
+
+# VSCode/IDE files
+.vscode/
+.idea/
+
+# Static root (if using collectstatic)
+staticfiles/

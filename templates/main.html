@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MK Method - Simplified Approach to Compound Proportion Problems</title>
+  <meta name="description" content="Learn the MK Method by Mehboob Khan — a simplified, structured, and original technique for solving compound proportion problems efficiently.">
+  <meta name="keywords" content="MK Method, Mehboob Khan Method, compound proportion, arithmetic method, work and time problems, math technique, solve math easily, MKMethod">
+  <meta name="author" content="Mehboob Khan">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="MK Method - Simplified Approach to Compound Proportion Problems">
+  <meta property="og:description" content="Understand and master the MK Method, a clear and logical technique for solving complex arithmetic proportion problems with ease.">
+  <meta property="og:type" content="website">
+
+  <!-- Viewport for Responsive Design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header, main, footer {
+      max-width: 960px;
+      margin: auto;
+      padding: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0077cc;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    h1, h2, h3 {
+      color: #003366;
+    }
+
+    .nav {
+      display:flex;
+      justify-content:space-between;
+      background: #e0e0e0;
+      padding: 10px;
+    }
+
+    .nav a {
+      font-weight: bold;
+    }
+    .arrow{
+        color:red;font-size:30px}
+
+    section {
+      background: #ffffff;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      .subtitle {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .mission {
+            font-style: italic;
+            background-color: #e8f4fc;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <header class="nav">
+    <a href="{% url 'home:home' %}">MK method</a>
+    <a href="{% url 'reviews:place_review' %}">Reviews</a>
+    <a href="{% url 'home:about_auther' %}">About Author</a>
+  </header>
+
+    {% block content %}
+    
+    {% endblock content %}
+</body>
+</html>

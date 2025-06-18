@@ -1,0 +1,152 @@
+{% extends 'main.html' %}
+
+{% block content %}
+  <main>
+    <section>
+      <h1>MK Method</h1>
+      <article>
+        <h2>Introduction to MK Method:</h2>
+        <p>The MK Method (Mehboob Khan Method) is a structured and simplified approach to solving compound proportion problems in arithmetic. Compound proportion problems involve multiple related quantities that vary directly or inversely with one another. These problems are often encountered in real-life scenarios involving work, time, men, machines, wages, etc.</p>
+
+        <p>Unlike traditional trial-and-error or ratio-chain techniques, the MK Method uses a single systematic procedure that remains the same regardless of the complexity of the problem. It ensures clarity, efficiency, and accuracy by organizing the information into a logical format and performing step-by-step calculations.</p>
+      </article>
+
+      <article>
+        <h2>Uniqueness of MK Method</h2>
+        <ul>
+          <li>✅ <strong>Uniform Procedure:</strong> One fixed format works for all types of compound proportion problems.</li>
+          <li>✅ <strong>No Memorization of Formulas:</strong> It doesn't require learning multiple formulas; instead, it relies on single logical comparisons.</li>
+          <li>✅ <strong>Original Innovation:</strong> Entirely self-developed by Mehboob Khan without any external assistance.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h2>General Procedure of MK Method (Step-by-Step)</h2>
+
+        <h3>Step 1:</h3>
+        <p>Identify the base quantity, the quantity whose value is required (e.g., days, men, work, etc.).</p>
+
+        <h3>Step 2:</h3>
+        <p>Build a comparison table:</p>
+        <p>
+    Row 1: <br>All the quantities mentioned in the question.
+    <br>Row 2: <br>All the values of the respective quantities.
+    <br>Row 3: <br>Again, all the respective values mentioned in the question.
+    <br>Column 1: <br>The quantity whose value is to be calculated.
+        </p>
+
+        <h3>Step 3:</h3>
+        <p>Compare the first column with the second column, ignoring the third column.<br>
+        Then compare the first column with the third column, ignoring the second column.</p>
+
+        <h3>Step 4:</h3>
+        <p>Put the arrows:<br>
+        In column 1: draw an arrow towards the unknown (x). The head of the arrow is the numerator, and the tail is the denominator.</p>
+
+        <p>Example:</p>
+        <p><strong>Problem:</strong><br>
+        12 men can complete a work in 10 days working 8 hours a day. In how many days can 16 men complete the same work working 6 hours a day?</p>
+
+        <p><strong>Step 1:</strong> Base quantity = Days</p>
+        <p><strong>Step 2:</strong> Table</p>
+        <pre>
+      Days    |   Men   |  Hours
+      -----------------------------
+      10      |   12    |   8
+      x       |   16    |   6
+        </pre>
+        <h3>Explanation of Arrows</h3>
+<ul>
+  <li>In the table, we compare the <strong>Men</strong> column with <strong>Days</strong> and <strong>Hours</strong> to decide the direction of the arrows.</li>
+  
+  <li><strong>Days Column:</strong>
+    <ul>
+      <li>12 men work for 10 days.</li>
+      <li>If the number of men increases to 16, they will take <strong>fewer days</strong> to complete the same work.</li>
+      <li>Since the number of days becomes <strong>less</strong>, the arrow points <strong>upward</strong> from 16 to 12.</li>
+    </ul>
+  </li>
+  
+  <li><strong>Hours Column:</strong>
+    <ul>
+      <li>12 men work 8 hours per day.</li>
+      <li>If they now work only 6 hours per day, they will need <strong>more days</strong> to finish the work.</li>
+      <li>Since the number of days becomes <strong>more</strong>, the arrow points <strong>upward</strong> from 6 to 8.</li>
+    </ul>
+  </li>
+  
+  <li>The direction of each arrow depends on whether the value being compared becomes <strong>less</strong> or <strong>greater</strong>.</li>
+  
+  <li>That’s why, in the <em>Putting arrows</em> section, the arrows point toward either the <strong>smaller</strong> or <strong>greater</strong> number based on the logic of comparison.</li>
+</ul>
+    <pre>
+      Days    |   Men   |  Hours
+      -----------------------------
+     <span class="arrow">↓</span>10      |    12    |    8
+      x       |   <span class="arrow">↑</span>16    |  <span class="arrow">↑</span>6
+        </pre>
+        <p><strong>Step 3:</strong> Arrows & Fraction</p>
+        <ul>
+            <pre>
+<math display="block">
+  <mfrac>
+    <mi>x</mi>
+    <mn>10</mn>
+  </mfrac>
+  <mo>=</mo>
+  <mfrac>
+    <mn>12</mn>
+    <mn>16</mn>
+  </mfrac>
+  <mo>&#215;</mo>
+  <mfrac>
+    <mn>8</mn>
+    <mn>6</mn>
+  </mfrac>
+</math>
+
+<math display="block">
+  <mfrac>
+    <mi>x</mi>
+    <mn>10</mn>
+  </mfrac>
+  <mo>=</mo>
+  <mfrac>
+    <mn>3</mn>
+    <mn>4</mn>
+  </mfrac>
+  <mo>&#215;</mo>
+  <mfrac>
+    <mn>4</mn>
+    <mn>3</mn>
+  </mfrac>
+</math>
+
+<math display="block">
+  <mfrac>
+    <mi>x</mi>
+    <mn>10</mn>
+  </mfrac>
+  <mo>=</mo>
+  <mn>1</mn>
+</math>
+
+<math display="block">
+  <mi>x</mi>
+  <mo>=</mo>
+  <mn>10</mn>
+</math>
+            </pre>
+
+        <strong>Result:</strong> x = 10</p>
+        <p>✅ <strong>Answer:</strong> 10 days</p>
+      </article>
+    </section>
+  </main>
+
+  <footer style="text-align:center; padding:10px;">
+    <small>&copy; 2025 MK Method by Mehboob Khan</small>
+  </footer>
+</body>
+</html>
+{% endblock content %}
